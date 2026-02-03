@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية نوفل | فلسفة الرياضيات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #1a1a2e;
+            --accent-red: #e94560;
+            --soft-blue: #16213e;
+            --white: #ffffff;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Cairo', sans-serif;
+            margin: 0; padding: 0; color: var(--primary-dark);
+            line-height: 1.7;
+        }
+
+        header {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-red);
+        }
+
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+
+        /* صندوق المقالة */
+        .article-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
+
+        .main-title {
+            color: var(--accent-red);
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        /* العناوين المنهجية */
+        .method-step {
+            display: inline-block;
+            background: var(--soft-blue);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .content-box {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-right: 5px solid var(--soft-blue);
+        }
+
+        /* قائمة النقاط */
+        ul { list-style: none; padding: 0; }
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #edf2f7;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        ul li::before { content: "✔"; color: var(--accent-red); font-weight: bold; }
+
+        /* الخاتمة */
+        .conclusion {
+            background: var(--accent-red);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* زر التحميل */
+        .btn-action {
+            display: block; width: 100%; max-width: 300px;
+            margin: 30px auto; padding: 15px;
+            background: var(--primary-dark); color: white;
+            text-align: center; text-decoration: none;
+            border-radius: 50px; font-weight: 900;
+            transition: 0.3s; border: none; cursor: pointer;
+        }
+        .btn-action:hover { transform: scale(1.05); background: var(--accent-red); }
+
+        @media print { .btn-action { display: none; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="margin:0; font-family: 'Montserrat';">PHILOSOPHY HUB</h1>
+    <p>الإشكالية الثالثة: فلسفة العلوم | المشكلة الأولى: فلسفة الرياضيات</p>
+</header>
+
+<div class="container">
+    <div class="article-card">
+        <div class="main-title">مقالة المقارنة بين الرياضيات الكلاسيكية والمعاصرة</div>
+
+        <div class="step">
+            <span class="method-step">01. طرح المشكلة</span>
+            <div class="content-box">
+                تعتبر الرياضيات مفاهيم عقلية مجردة بعيدة عن المحسوس، مرت بعدة منعرجات أهمها الثورة العلمية على المفاهيم الكلاسيكية في القرن 19. الأمر الذي جعل هناك اختلاف بين الرياضيات الكلاسيكية والرياضيات المعاصرة، وهذا ما يجعلنا نتساءل: <b>ما هي العلاقة بين الرياضيات الكلاسيكية والرياضيات المعاصرة؟</b>
+            </div>
+        </div>
+
+        <div class="step">
+            <span class="method-step">02. أوجه التشابه</span>
+            <div class="content-box">
+                <ul>
+                    <li>كلاهما يعتمد على مبادئ عقلية بعيدة عن المحسوس.</li>
+                    <li>كل منهما ساهم بشكل فعال في تطوير العلم الحديث.</li>
+                    <li>كل منهما يعتمد على البرهنة المنطقية كأداة للوصول للنتائج.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step">
+            <span class="method-step">03. أوجه الاختلاف</span>
+            <div class="content-box" style="border-right-color: var(--accent-red);">
+                <ul>
+                    <li><b>المبادئ:</b> الكلاسيكية تعتمد على (البديهيات، المسلمات، التعريفات)، أما المعاصرة فتعتمد على <b>الأوليات</b>.</li>
+                    <li><b>الموضوع:</b> موضوع الكلاسيكية هو الكم (متصل ومنفصل)، أما المعاصرة فتميزت بهندسات جديدة <b>لاإقليدية</b> (ريمان، لوباتشفسكي).</li>
+                    <li><b>المفاهيم:</b> فطرية عند الكلاسيكيين، أما عند المحدثين فتستند لفعالية العقل في بناء الموضوعات.</li>
+                    <li><b>المنهج:</b> قائم على التحليل والتركيب كلاسيكياً، بينما هو منهج <b>أكسيومي</b> (فرضي استنتاجي) معاصراً.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step">
+            <span class="method-step">04. مواطن التداخل</span>
+            <div class="content-box">
+                تعتبر الرياضيات الكلاسيكية أرضية صلبة مهدت لوجود الرياضيات المعاصرة؛ فالارتباط بينهما وثيق، والعلاقة الجوهرية الموجودة بينهما هي علاقة <b>تكامل</b> وتوسيع.
+            </div>
+        </div>
+
+        <div class="conclusion">
+            الخلاصة: الرياضيات المعاصرة لا تهدم الرياضيات الكلاسيكية بل تختلف عنها من جهة العقلانية التي تستند إليها.
+        </div>
+
+        <button class="btn-action" onclick="window.print()">📥 تحميل الملخص (PDF)</button>
+    </div>
+</div>
+
+<footer style="text-align: center; padding-bottom: 30px; opacity: 0.6;">
+    <p>أكاديمية نوفل | مشغل بواسطة WordPress & Mastermind</p>
+</footer>
+
+</body>
+</html>
